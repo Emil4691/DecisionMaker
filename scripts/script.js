@@ -42,56 +42,73 @@ decideButtonEl.addEventListener("click", randomize);
 restartButtonEl.addEventListener("click", restart);
 
 function randomize() {
-  var total = 0;
+  if (
+    option1.value == "" &&
+    option2.value == "" &&
+    option3.value == "" &&
+    option4.value == "" &&
+    option5.value == "" &&
+    option6.value == "" &&
+    option7.value == "" &&
+    option8.value == "" &&
+    option9.value == "" &&
+    option10.value == "" &&
+    option11.value == "" &&
+    option12.value == ""
+  ) {
+    alert("You must fill in at least one of the fields");
+  } else {
+    var total = 0;
 
-  for (var i = 0; i < list.length; i++) {
-    if (list[i].value != "") {
-      total += 1;
+    for (var i = 0; i < list.length; i++) {
+      if (list[i].value != "") {
+        total += 1;
+      }
     }
+
+    var rand = Math.floor(Math.random() * total) + 1;
+
+    if (rand === 1) {
+      console.log(option1.value);
+      decisionEl.innerHTML = option1.value;
+    } else if (rand === 2) {
+      console.log(option2.value);
+      decisionEl.innerHTML = option2.value;
+    } else if (rand === 3) {
+      console.log(option3.value);
+      decisionEl.innerHTML = option3.value;
+    } else if (rand === 4) {
+      console.log(option4.value);
+      decisionEl.innerHTML = option4.value;
+    } else if (rand === 5) {
+      console.log(option5.value);
+      decisionEl.innerHTML = option5.value;
+    } else if (rand === 6) {
+      console.log(option6.value);
+      decisionEl.innerHTML = option6.value;
+    } else if (rand === 7) {
+      console.log(option7.value);
+      decisionEl.innerHTML = option7.value;
+    } else if (rand === 8) {
+      console.log(option8.value);
+      decisionEl.innerHTML = option8.value;
+    } else if (rand === 9) {
+      console.log(option9.value);
+      decisionEl.innerHTML = option9.value;
+    } else if (rand === 10) {
+      console.log(option10.value);
+      decisionEl.innerHTML = option10.value;
+    } else if (rand === 11) {
+      console.log(option11.value);
+      decisionEl.innerHTML = option1.value;
+    } else if (rand === 12) {
+      console.log(option12.value);
+      decisionEl.innerHTML = option12.value;
+    }
+
+    notDecidedEl.style.display = "none";
+    hasDecidedEl.style.display = "block";
   }
-
-  var rand = Math.floor(Math.random() * total) + 1;
-
-  if (rand === 1) {
-    console.log(option1.value);
-    decisionEl.innerHTML = option1.value;
-  } else if (rand === 2) {
-    console.log(option2.value);
-    decisionEl.innerHTML = option2.value;
-  } else if (rand === 3) {
-    console.log(option3.value);
-    decisionEl.innerHTML = option3.value;
-  } else if (rand === 4) {
-    console.log(option4.value);
-    decisionEl.innerHTML = option4.value;
-  } else if (rand === 5) {
-    console.log(option5.value);
-    decisionEl.innerHTML = option5.value;
-  } else if (rand === 6) {
-    console.log(option6.value);
-    decisionEl.innerHTML = option6.value;
-  } else if (rand === 7) {
-    console.log(option7.value);
-    decisionEl.innerHTML = option7.value;
-  } else if (rand === 8) {
-    console.log(option8.value);
-    decisionEl.innerHTML = option8.value;
-  } else if (rand === 9) {
-    console.log(option9.value);
-    decisionEl.innerHTML = option9.value;
-  } else if (rand === 10) {
-    console.log(option10.value);
-    decisionEl.innerHTML = option10.value;
-  } else if (rand === 11) {
-    console.log(option11.value);
-    decisionEl.innerHTML = option1.value;
-  } else if (rand === 12) {
-    console.log(option12.value);
-    decisionEl.innerHTML = option12.value;
-  }
-
-  notDecidedEl.style.display = "none";
-  hasDecidedEl.style.display = "block";
 }
 
 function restart() {
