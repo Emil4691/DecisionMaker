@@ -9,7 +9,7 @@ body {
 h1 {
   text-align: center;
   margin-top: 35px;
-  word-wrap: break-word;
+  font-size: 2vw;
 }
 
 h2 {
