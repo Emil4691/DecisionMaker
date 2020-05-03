@@ -16,8 +16,8 @@ body {
 
 h1 {
   text-align: center;
+  margin: 15px;
   margin-top: 35px;
-  font-size: 2vw;
   font-weight: 100;
 }
 
