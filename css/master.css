@@ -1,0 +1,84 @@
+body {
+  font-family: "SF Pro Display", sans-serif;
+  background-color: #03002e;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 35px;
+}
+
+h2 {
+  font-family: "SF Pro Text", sans-serif;
+  text-align: center;
+  margin-top: 35px;
+  border: 3px solid gray;
+  border-radius: 3px;
+  padding: 30px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+button {
+  background-color: #090088;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555555;
+  color: white;
+}
+
+input {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: #cccccc;
+}
+
+.inputs {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 75px;
+  margin-right: 400px;
+  margin-left: 400px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+#decideButton {
+  margin-top: 100px;
+}
+
+#hasDecided {
+  display: none;
+  margin-top: 10%;
+}
+
+#restartButton {
+  margin-top: 50px;
+}
+
+@font-face {
+    font-family: "SF Pro Display";
+    src: url("fonts/SF-Pro-Display-Regular.otf");
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: url("fonts/SF-Pro-Text-Regular.otf");
+}
