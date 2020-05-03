@@ -87,3 +87,8 @@ input {
   font-family: "SF Pro Text";
   src: url("fonts/SF-Pro-Text-Regular.otf");
 }
+
+@viewport {
+  width: device-width;
+  zoom: 1;
+}
